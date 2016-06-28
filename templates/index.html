@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Sign in</title>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+</head>
+ 
+
+<body>
+ 
+    <div class="container">
+        <div class="jumbotron">
+            <form class="form-signin" method="post" action="/tasks">
+                <h3>Enter details</h3>
+                <label for="name" class="sr-only">Name:</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Name" required autofocus>
+                <label for="ph_no" class="sr-only">Phone Number:</label>
+                <input type="text" name="ph_no" id="ph_no" class="form-control" placeholder="Phone Number" required autofocus>
+                <br>
+                <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
+            </form>
+        </div>
+    </div>
+</body>
+ 
+</html>
