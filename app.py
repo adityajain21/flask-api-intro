@@ -27,8 +27,8 @@ def get_tasks():
 @app.route('/tasks',methods=['POST'])
 def create_task():
     task={
-    'name':request.form['name'],
-    'phone_no':request.form['ph_no']
+    'name':request.json['name'],
+    'phone_no':request.json['ph_no']
     }
 
     tasks.append(task)
