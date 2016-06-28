@@ -14,16 +14,6 @@ tasks = [
     }
 ]
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-
-@app.route('/tasks', methods=['GET'])
-def get_tasks():
-    return jsonify({'tasks': tasks})
-
-
 @app.route('/tasks',methods=['POST'])
 def create_task():
     task={
